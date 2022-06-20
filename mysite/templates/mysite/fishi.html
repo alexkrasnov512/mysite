@@ -1,0 +1,11 @@
+<div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Выбрать знак
+    </button>
+
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        {% for i in object_list %}
+        <li><a class="dropdown-item" href="{{i.get_absolute_url}}">{{ i.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
