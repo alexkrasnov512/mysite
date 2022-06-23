@@ -137,13 +137,9 @@ STATIC_ROOT = None
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
-
-django_heroku
 
 django_heroku.settings(locals())
