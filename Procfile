@@ -1,2 +1,2 @@
 web: gunicorn blog.wsgi:application --log-file -
-python manage.py migrate
+heroku run python manage.py migrate
