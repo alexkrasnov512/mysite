@@ -7,7 +7,7 @@ from .models import Article
 class ArticleListView(ListView):
     model = Article
     template_name = 'mysite/home.html'
-    #context_object_name = 'article'
+    context_object_name = 'article'
     slug_url_kwarg = 'article_slug'
 
 

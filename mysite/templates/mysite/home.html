@@ -13,7 +13,7 @@
 <br>
 <div class="container">
     <div class="row">
-    {% for i in object_list %}
+    {% for i in article %}
         <div class="col-lg-4">
             <h4><a style="color: #6f5a00" href="{{i.get_absolute_url}}">{{i.title}}</a></h4>
             {% if i.image %}
