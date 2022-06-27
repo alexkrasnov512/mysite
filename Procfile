@@ -1,6 +1,3 @@
-export DJANGO_SUPERUSER_USERNAME = root
-export DJANGO_SUPERUSER_EMAIL = test@test.com
-export DJANGO_SUPERUSER_PASSWORD = 12345
 release: python manage.py migrate
-release: python manage.py createsuperuser --noinput
+release: python manage.py createsuperuser2 --username root --password 123321 --noinput --email 'blank@email.com'
 web: gunicorn blog.wsgi:application --log-file -
