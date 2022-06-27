@@ -151,7 +151,6 @@ DATABASES['default'].update(db_from_env)
 django_heroku.settings(locals())
 
 
-DJANGO_SUPERUSER_EMAIL = 'orelkiller7@gmail.com'
-DJANGO_SUPERUSER_USERNAME = 'root'
-DJANGO_SUPERUSER_PASSWORD = '12345'
-
+DJANGO_SUPERUSER_EMAIL = orelkiller7@gmail.com
+DJANGO_SUPERUSER_USERNAME = root
+DJANGO_SUPERUSER_PASSWORD = 12345
