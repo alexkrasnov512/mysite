@@ -16,7 +16,7 @@ import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-import export
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -153,8 +153,8 @@ DATABASES['default'].update(db_from_env)
 """django_heroku.settings(locals())"""
 
 DJANGO_SUPERUSER_USERNAME = "root"
-export DJANGO_SUPERUSER_USERNAME
+
 DJANGO_SUPERUSER_EMAIL = "orelkiller7@gmail.com"
-export DJANGO_SUPERUSER_EMAIL
+
 DJANGO_SUPERUSER_PASSWORD = "12345"
-export DJANGO_SUPERUSER_PASSWORD
+
