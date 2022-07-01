@@ -145,12 +145,12 @@ STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, 'static'),)
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 MEDIA_URL = '/media/'
 
-
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
-django_heroku.settings(locals())
+
 
 
 
